@@ -1,6 +1,7 @@
 # LSE_DA_COVID_analysis
 Use Python to analyse a data set about COVID-19 vaccinations in UK between Jan'20 to Oct'21
 
+Week2:
 There are available 3 data sets imported into notebook as followed:
 
 1)	Cases: 
@@ -23,6 +24,7 @@ a.	3960 rows and 21 columns.
 b.	Several missing values for all rows.
 c.	DataFrame has default index starting from 0.
 
+Week 3:
 I had a chance to explore the data further with group by function. My primary focus for this week was on vaccination number. The data set available has all information to make the analysis. However for further studies, in order to be able to analyse/compare case numbers with vaccination I merged to data set using left join.
 
 Below are the summary of my findings:
@@ -38,3 +40,19 @@ It is interesting that the order does not change for any metric. It should be co
 The order is different than the pervious finding. Turk and Caicos Islands have the biggest percentage of not fully vaccinated people in UK. However as mentioned earlier the numbers are very close and all around %4.51.
 
 •	I had a look on how vaccination numbers are changing over days. In have the full data for almost 2 years. At this point I had a visual check and spotted some days are bigger than others. To further explore I bring weekday names to my dataframe. By visual check it is hard to talk about trends. I realized vaccination numbers are increasing as ramp up trend then decreasing a bit. Usually weekdays have more numbers than weekend. I will further analyse the trend with visuals.
+
+Week 4:
+This week I had a chance to go through my dataset with different visuals. I analysed vaccinated, deaths and recovered patient numbers in state/province breakdown. In addition, I had a chance to review how death and recovered numbers evolved overtime.
+
+In terms of vaccination, all provinces have similar trend. People with first dose is larger than the people with 2 doses. In order to further examine and put them on same scale I also created new 2 columns which are percentage of fully vaccinated among the group who took vaccine (not on eligible person) and ratio of interest (not fully vaccinated percentage) All provinces have almost 95% fully vaccinated and 5% ratio of interest among vaccine takers.
+
+Next, I explored deaths over time and hospitalized numbers over time. Over time visualisation can be explored best with line chart. When I checked the deaths over time, I realized others group seriously affects the visualisation and does not help to clearly see the trend. When I excluded others data, I was able to see the trend over time. I plot data 2 different methods. First checked the plot with Date data provided second I converted Date to Months and then plot. Month version has the same shape with other but show confidence interval around lines that indicated the movement within that month.
+ 
+•	There are 2 death cycles for almost all provinces. (Which was the issue for others as well)
+•	Some provinces (Anguilla, Isla of Man, Bermuda) start having a sharp increase in death numbers at the beginning of the pandemic (03/04 – 2020) whereas some others (Turk & Caicos, Gibraltar) keep themselves almost safe till Q42020. British Virgin Island remained safe from death almost till mid 2021.
+•	Gibraltar province witnessed deaths later on almost end of 2020, however unfortunately it is the most hit province except locations under others.
+•	Death numbers show 3 peaks so far. The third one seems to be better than previous ones (less death) although I am not able to view the full effect since last data point is 11-2021.
+
+Lastly, I explored the recovered numbers per provinces. Plot helped me to identify the missing data in here. In all provinces recovered patient numbers are changed to 0 all at once around 08-2021. This is clearly a data quality issue. I took a note here and decide how to handle those next.
+•	Similar to death data Gibraltar and Anguilla has the biggest recovered number of people.
+•	Increase number on recovered patients accumulates basically within 2021. The correlation between vaccination on similar dates vs recovered numbers shall be investigated further. It is high likely as number of vaccinated people increased recovered. 
