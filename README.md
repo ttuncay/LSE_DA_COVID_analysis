@@ -56,3 +56,11 @@ Next, I explored deaths over time and hospitalized numbers over time. Over time 
 Lastly, I explored the recovered numbers per provinces. Plot helped me to identify the missing data in here. In all provinces recovered patient numbers are changed to 0 all at once around 08-2021. This is clearly a data quality issue. I took a note here and decide how to handle those next.
 •	Similar to death data Gibraltar and Anguilla has the biggest recovered number of people.
 •	Increase number on recovered patients accumulates basically within 2021. The correlation between vaccination on similar dates vs recovered numbers shall be investigated further. It is high likely as number of vaccinated people increased recovered. 
+
+Week 5:
+This week I had a chance to review tweets from May’2022 about COVID 19 pandemic. I analysed mainly the hashtags and checked what are the most common used ones. In order to explore further, I have 2 tasks in mind:
+1)	I would like to explore further data with likes, retweets etc information and check how engaging are those hashtags and are there any correlation.
+2)	I would like to compare hashtags provided in data set and the ones I extracted final week of the module 2. I would like to understand whether there is a change in hashtags, and any one of them increasing. To make this, I need following preparation and information:
+a.	I need to convert number of times hashtags appeared to percentages. The day I check tweets may not be comparable in terms of numbers but comparing percentages should be OK.
+b.	I need to check whether data provided is worldwide tweets regarding to Covid or only UK based. Plus, what was the search criteria while creating the dataset. If I am not able to access this information from Metadata, then I will simply compare my new tweets but comparison may not be ideal.
+
