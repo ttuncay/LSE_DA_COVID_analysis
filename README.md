@@ -74,6 +74,4 @@ In the second part of the assignment, I had a chance to reflect on data ethics. 
 However, analysis is a continuous process. I may need to focus, and deep dive further based on my findings and any abnormalities that needs to be answered. 
 
 Any further analysis requiring drilling down to certain dates and regions may lead us to personal level. If it is really needed, we should make sure we have the consent to people to analyze their personal data and still any finding are presented with masked view.
-![image](https://user-images.githubusercontent.com/44422699/176995146-276de10b-238e-4afd-bae2-2b1b285dc6e6.png)
-
 
