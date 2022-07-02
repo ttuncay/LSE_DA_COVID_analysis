@@ -64,3 +64,16 @@ This week I had a chance to review tweets from May’2022 about COVID 19 pandemi
 a.	I need to convert number of times hashtags appeared to percentages. The day I check tweets may not be comparable in terms of numbers but comparing percentages should be OK.
 b.	I need to check whether data provided is worldwide tweets regarding to Covid or only UK based. Plus, what was the search criteria while creating the dataset. If I am not able to access this information from Metadata, then I will simply compare my new tweets but comparison may not be ideal.
 
+Week 6:
+This week I had a chance to plot hospitalized people data with time series which would enable me to forecast for future. The time series forecast is based on past and current data. The line plot I drew demonstrates the upper and lower limit of actual hospitalized data with 7 day rolling average values.
+
+7 day rolling average shall start after the days of selected window. However, our data consists of dates that there are no hospitalizations. This is not a problem in plot since data afterwards is more important, but we should take this into account when we are calculating the error where we calculate abs difference between actual hospitalizations and rolling averages.
+
+In the second part of the assignment, I had a chance to reflect on data ethics. The data I am working on is Qualitative data where I can create aggregates and derive analysis and results. It does not have any personal level information. 
+
+However, analysis is a continuous process. I may need to focus, and deep dive further based on my findings and any abnormalities that needs to be answered. 
+
+Any further analysis requiring drilling down to certain dates and regions may lead us to personal level. If it is really needed, we should make sure we have the consent to people to analyze their personal data and still any finding are presented with masked view.
+![image](https://user-images.githubusercontent.com/44422699/176995146-276de10b-238e-4afd-bae2-2b1b285dc6e6.png)
+
+
